@@ -1,0 +1,60 @@
+/*
+=============== 
+Generator Styles
+===============
+*/
+
+.container {
+    text-align: center;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.container h3 {
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-color: transparent;
+    border-top-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    text-transform: uppercase;
+}
+
+input.error {
+    border: 2px solid var(--clr-red-dark );
+}
+
+.btn {
+    background: var(--clr-primary-5);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--clr-white);
+    cursor: pointer;
+    border-color: transparent;
+    border-top-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+
+@media screen and (max-width: 1499px){
+    .colors {
+        grid-auto-rows: 150px
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container h3 {
+        font-size: 1rem;
+    }
+
+    input, .btn {
+        font-size: 0.85rem;
+    }
+}
